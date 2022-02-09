@@ -1,0 +1,121 @@
+html {
+  font-size: 62.5%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #116d4f; }
+
+/*--------------------------------------*/
+.container {
+  height: 70rem;
+  width: 60rem;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 4fr 6fr; }
+  .container__1 {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(90deg, #22c391 0%, #2ee681 100%);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr; }
+    .container__1-name {
+      margin: 2rem;
+      color: white;
+      font-size: 1.4rem; }
+      .container__1-name p {
+        background: rgba(243, 242, 242, 0.363);
+        width: fit-content;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05); }
+    .container__1-solde {
+      align-self: center;
+      justify-self: center; }
+      .container__1-solde h1 {
+        font-size: 6rem;
+        color: white;
+        background: rgba(243, 242, 242, 0.363);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); }
+    .container__1-send {
+      text-align: center; }
+      .container__1-send > * {
+        padding: 1rem;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05); }
+      .container__1-send input {
+        color: grey;
+        outline: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+        .container__1-send input:focus {
+          border-bottom: 2px solid green; }
+      .container__1-send button {
+        background: rgba(243, 242, 242, 0.363);
+        color: white; }
+        .container__1-send button:hover {
+          transform: scale(1.1); }
+        .container__1-send button:active {
+          transform: scale(1); }
+  .container__2 {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 1fr;
+    overflow-y: hidden; }
+    .container__2-title {
+      align-self: center;
+      width: min-content; }
+      .container__2-title > * {
+        color: grey;
+        font-weight: 100;
+        margin-left: 2rem;
+        border-bottom: 1px dashed rgba(128, 128, 128, 0.274);
+        padding: 0.5rem; }
+    .container__2-transac {
+      padding: 1rem 0;
+      overflow-y: auto;
+      scroll-behavior: smooth; }
+      .container__2-transac .card {
+        height: 8em;
+        background-color: aqua;
+        width: 85%;
+        margin: 2.5rem auto;
+        background-color: #fdfdfd;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; }
+        .container__2-transac .card > * {
+          align-self: center; }
+        .container__2-transac .card_info {
+          justify-self: left;
+          margin-left: 2rem; }
+          .container__2-transac .card_info > * {
+            margin: 0.7rem 0; }
+          .container__2-transac .card_info .userSend {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: grey; }
+          .container__2-transac .card_info .time {
+            font-size: 1.1rem; }
+        .container__2-transac .card_montant {
+          justify-self: right;
+          margin-right: 2rem;
+          color: orangered; }
+          .container__2-transac .card_montant p {
+            font-size: 1.5rem; }
